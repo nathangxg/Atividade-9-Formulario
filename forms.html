@@ -1,0 +1,218 @@
+<html>
+    <head>
+        <meta http-equive="content-type" content="text/html; charset=utf-8"/>
+        <meta charset="UTF-8">
+        <title>Atividade Formulário</title>
+    </head>
+    <body>
+        <h2 align="center"><font size="10">Formulário Vaga de Emprego</h2></font>
+        <p align="center"><font size="5">Preencha o formulário abaixo:</p></font>
+        
+        <form action="enviar.php" method="post" name="Formulário">
+            <table align="center" border="0" cellpadding="5" cellspacing="10">
+                <tr>
+                    <td bgcolor="white">
+                        <label for="nome">Nome:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="text" id="nome" name="nome" size="40" maxlength="30" placeholder="Digite seu nome."/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label for="email">E-mail:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="email" id="email" name="email" size="40" maxlength="50" placeholder="Digite seu e-mail."/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label for="cel">Celular:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="text" id="cel" name="cel" size="10" maxlength="13" placeholder="(xx) xxxx-xxxx"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label for="nasc">Data de Nascimento:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="date" id="nasc" name="nasc" size="40"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label>Sexo:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="radio" id="sexo" name="sexo" value="Masculino"/>
+                        <label for="Sexo">Masculino</label>
+
+                        <input type="radio" id="sexo" name="sexo" value="Feminino"/>
+                        <label for="Sexo">Feminino</label>
+
+                        <input type="radio" id="sexo" name="sexo" value="Outros"/>
+                        <label for="Sexo">Outros</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label for="cor">Cor Favorita:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="color" id="cor" name="cor">
+                    </td bgcolor="white">
+                </tr>
+
+                <tr>
+                    <td bgcolor="white">
+                        <label>Endereço:</label>
+                    </td>
+                    <td bgcolor="white">
+                        <input type="text" id="endereço" name="endereço" size="40" placeholder="Digite seu endereço."/>
+                        <br>
+
+                        <input type="text" id="endereço" name="endereço" size="5" placeholder="Nº"/>
+                        <br>
+
+                        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP."/>
+                        
+                        <select id="logradouro" name="logradouro">
+                            <option value="" selected="select">---Logradouro---</option>
+                            <option value="Rua">Rua</option>
+                            <option value="Avenida">Avenida</option>
+                            <option value="Condomínio">Condomínio</option>
+                            <option value="Quadra">Quadra</option>
+                            <option value="Via">Via</option>
+                            <option value="Viela">Viela</option>
+                        </select>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Marque seus conhecimentos<br>no pacote office:</label>
+                    </td>
+                    <td>
+                        Word:<input type="radio" id="word" name="word" value="Básico"/>
+                        <label for="word">Básico</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="word" name="word" value="Intermediário"/>
+                        <label for="word">Intermediário</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="word" name="word" value="Avançado"/>
+                        <label for="word">Avançado</label>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="conhecimento2"></label>
+                    </td>
+                    <td>
+                        Excel:<input type="radio" id="excel" name="excel" value="Básico"/>
+                        <label for="excel">Básico</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="excel" name="excel" value="Intermediário"/>
+                        <label for="excel">Intermediário</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="excel" name="excel" value="Avançado"/>
+                        <label for="excel">Avançado</label>
+                        <br>
+                        <br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label></label>
+                    </td>
+                    <td>
+                        Power Point:<input type="radio" id="powerpoint" name="powerpoint" value="Básico"/>
+                        <label for="powerpoint">Básico</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="powerpoint" name="powerpoint" value="Intermediário"/>
+                        <label for="powerpoint">Intermediário</label>
+                        <br>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="powerpoint" name="powerpoint" value="Avançado"/>
+                        <label for="powerpoint">Avançado</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Marque seus conhecimentos<br>nas seguintes linguagens e<br>marcações de texto:</label>
+                    </td>
+                    <td>
+                        
+                        <input type="checkbox" id="HTML" name="HTML" value="HTML"/>
+                        <label for="HTML">HTML</label>
+                        <br>
+                        
+                        <input type="checkbox" id="CSS" name="CSS" value="CSS"/>
+                        <label for="CSS">CSS</label>
+                        <br>
+                        
+                        <input type="checkbox" id="PHP" name="PHP" value="PHP"/>
+                        <label for="PHP">PHP</label>
+                        <br>
+                        
+                        <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript"/>
+                        <label for="JavaScript">JavaScript</label>
+                        <br>
+                        
+                        <input type="checkbox" id="Python" name="Python" value="Python"/>
+                        <label for="Python">Python</label>
+                        <br>
+                        
+                        <input type="checkbox" id="Ruby" name="Ruby" value="Ruby"/>
+                        <label for="Ruby">Ruby</label>
+                        <br>
+                        
+                        <input type="checkbox" id="C++" name="C++" value="C++"/>
+                        <label for="C++">C++</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="curriculo">Envie Seu curriculo:</label>
+                    </td>
+                    <td>
+                        <input type="file" id="curriculo" name="curriculo"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="comentario">Comentário:</label>
+                    </td>
+                    <td>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Digite seu comentário."></textarea>
+                    </td>
+                </tr>
+
+                <th colspan="2">
+                    <input type="submit" id="enviar" name="enviar" value="ENVIAR"/>
+                    <input type="reset" id="limpar" name="limpar" value="LIMPAR"/>
+                    <input type="button" id="salvar" name="salvar" value="SALVAR"/>
+                </th>
+            </table>
+        </form>
+    </body>
+</html>
